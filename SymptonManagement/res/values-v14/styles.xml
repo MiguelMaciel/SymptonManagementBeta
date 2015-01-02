@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/azulshine</item>
+        <item name="android:actionBarStyle">@style/AppBaseActionBar</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme" />
+
+    <style name="AppBaseActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+
+        <!-- <item name="android:background">@drawable/azulshine</item> -->
+        <item name="android:background">#4E8290</item>
+    </style>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="miguelmaciel.capstone.symptonmanagement"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+ 	<uses-permission android:name="android.permission.INTERNET"/>
+ 	
+ 	 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+ 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_action_rod_of_asclepius"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <provider
+            android:name="miguelmaciel.capstone.database.SymptonProvider"
+            android:authorities="miguelmaciel.capstone.symptonprovider"
+            android:exported="false" >
+        </provider>
+
+        <activity
+            android:name="miguelmaciel.capstone.symptonmanagement.Authentication"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.patients.PatientHomepage"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.doctors.DoctorHomepage"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.patients.PatientProfileData"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:label=""
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.patients.PatientListOfDoctors"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.patients.PatientAlarmConfigurations"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.symptonmanagement.MedicationData"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:label=""
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.symptonmanagement.CheckInActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.symptonmanagement.CheckInQuestions"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.symptonmanagement.CheckInMedicationActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.symptonmanagement.CheckInMessage"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.doctors.DoctorProfileData"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:label=""
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.doctors.DoctorPatientFile"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:label=""
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.patients.PatientCheckInList"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="miguelmaciel.capstone.symptonmanagement.MedicineList"
+            android:label="" >
+        </activity>
+
+        <receiver android:name="miguelmaciel.capstone.adapters.CheckInReceiver" >
+        </receiver>
+
+        <activity
+            android:name="miguelmaciel.capstone.symptonmanagement.ChatCenter"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:label=""
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

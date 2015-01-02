@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="miguelmaciel.capstone.symptonmanagement.DoctorProfileData" >
+
+    <item
+        android:id="@+id/action_DoctorProfileData_Edit"
+        android:icon="@drawable/ic_action_edit"
+        android:title="@string/edit"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_DoctorProfileData_Cancel"
+        android:icon="@drawable/ic_action_cancel"
+        android:title="@string/cancel"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_DoctorProfileData_Save"
+        android:icon="@drawable/ic_action_save"
+        android:title="@string/save"
+        app:showAsAction="always"/>
+
+</menu>
+

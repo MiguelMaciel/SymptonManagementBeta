@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="@string/medication_name" />
+
+        <TextView
+            android:id="@+id/listCheckInMedication_MedicationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textIsSelectable="false" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/listCheckInMedication_Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="setActiveCheckInMedicationOnClickHandler"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/listCheckInMedication_No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="setInactiveCheckInMedicationOnClickHandler"
+                android:text="@string/no" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/listCheckInMedication_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textIsSelectable="false"
+            android:text="00/00/0000" />
+
+        <TextView
+            android:id="@+id/listCheckInMedication_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textIsSelectable="false"
+            android:text="00:00" />
+    </TableRow>
+
+</TableLayout>

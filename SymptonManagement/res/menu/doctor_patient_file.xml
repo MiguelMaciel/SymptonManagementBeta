@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="miguelmaciel.capstone.symptonmanagement.DoctorPatientFile" >
+
+    <item
+        android:id="@+id/action_DoctorProfileFile_CheckInRecord"
+        android:icon="@drawable/ic_action_list"
+        android:title="@string/checkin_record"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_DoctorProfileFile_Message"
+        android:icon="@drawable/ic_action_chat"
+        android:title="@string/message"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_DoctorProfileFile_AddMedication"
+        android:icon="@drawable/ic_action_medicine"
+        android:title="@string/add_medication"
+        app:showAsAction="always"/>
+
+</menu>

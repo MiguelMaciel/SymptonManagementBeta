@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="miguelmaciel.capstone.symptonmanagement.CheckInQuestions$PlaceholderFragment" >
+
+        <TextView
+            android:id="@+id/et_CheckInQuestions_Q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkQuestions_q1" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rb_CheckInQuestions_Q1_Controlled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/controlled" />
+
+            <RadioButton
+                android:id="@+id/rb_CheckInQuestions_Q1_Moderate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moderate" />
+
+            <RadioButton
+                android:id="@+id/rb_CheckInQuestions_Q1_Severe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/severe" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/et_CheckInQuestions_Q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkQuestions_q2" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rb_CheckInQuestions_Q2_No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+            <RadioButton
+                android:id="@+id/rb_CheckInQuestions_Q2_Some"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/some" />
+
+            <RadioButton
+                android:id="@+id/rb_CheckInQuestions_Q2_Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/et_CheckInQuestions_Q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkQuestions_q3" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp" >
+
+            <RadioButton
+                android:id="@+id/rb_CheckInQuestions_Q3_Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/rb_CheckInQuestions_Q3_No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_CheckInQuestions_Next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="@string/next" />
+    </LinearLayout>
+
+</ScrollView>
